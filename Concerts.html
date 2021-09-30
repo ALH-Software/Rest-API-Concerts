@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/concert.js" type="text/javascript"></script>
+
+    <title>Rest API :: Concerts</title>
+</head>
+
+
+
+
+<script>
+  
+    // the url of the API records
+    var path=`https://6154b3a92473940017efaf9d.mockapi.io/concerts`;
+
+    
+    // initialization
+    get_concert(`https://6154b3a92473940017efaf9d.mockapi.io/concerts/1`,0);
+</script>
+
+
+<body>
+     <!-- The template of a single concert record -->
+    <div class="concert">
+        <h2 id="artist">Unknown</h2>
+        <img id="artist_img" src="css/images/no_image.jpg" alt="there is no image" width="350" height="300"/>
+        <h3 id="venue">Unknown</h3>
+        <h4 id="datetime">Unknown</h4>
+    </div>
+    
+    <!-- Simple controllers to do the navigation -->
+    <div class="control">
+        <button id="next" onclick="onward(path,index)">Next</button>
+        <button id="previous" onclick="backward(path,index)">Previous</button>
+    </div>
+
+</body>
+</html>

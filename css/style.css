@@ -1,0 +1,27 @@
+ /* CSS style */
+ body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.concert{
+
+    text-align: center;
+}
+
+.control{
+    text-align: center;
+}
+
+#artist_img{
+    border: 10px solid black;
+    border-radius: 40%/60%;
+}
+button{
+    width: 80px;
+    height: 80px;
+    font-size: medium;
+    margin: 5px;
+    border-radius: 30%;
+}
+
